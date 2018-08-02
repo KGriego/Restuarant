@@ -1,0 +1,10 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h1, #hero a {
+    text-align: center;
+}

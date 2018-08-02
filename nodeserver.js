@@ -91,6 +91,10 @@ app.get("/reservation", function(req, res) {
   res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
+app.get("/public/css/style.css", function (req, res) {
+  res.sendFile(path.join(__dirname, "./public/css/style.css"));
+})
+
 // Displays all characters
 app.get("/api/list", function(req, res) {
   return res.json(list);

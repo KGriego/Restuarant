@@ -131,12 +131,12 @@ app.post("/api/list", function(req, res) {
 
   console.log("Length of list: " + list.length)
 
-  if (list.length >= 4) {
+  if (list.length > 5) {
     console.log("List: " + JSON.stringify(list));
     console.log("Reservations List: " + JSON.stringify(reservations));
-    reservations.push(newRes);
-  } else {
     waitingList.push(newRes);
+  } else {
+    reservations.push(newRes);
     alert("You must wait till a guest leaves");
   }
 
